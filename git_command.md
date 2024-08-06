@@ -49,3 +49,36 @@ CHORE: 빌드 업무 수정, 패키지 매니저 수정(ex .gitignore 수정 같
 git commit --amend -m "add commit format, how to watch git log short"
 ```
 
+---
+
+`git branch`
+```bash
+# branch 확인
+git branch
+
+# branch 생성
+git branch <branch name>
+git branch demo 
+
+# branch 이동
+git checkout <branch name>
+git branch demo
+
+# branch 생성 후 이동
+git switch -c <branch-name>
+git switch -c demo
+
+# branch 삭제
+git branch -d <branch-name>
+git branch -d demo
+
+# branch 강제 삭제
+git branch -D demo
+
+# branch 이름 변경
+git branch -m alpa test
+
+# git branch 상세보기
+git branch -v
+```
+

@@ -24,6 +24,12 @@ git push origin main
 
 ---
 
+`git log 짧게 보는 방법`
+```bash
+git log --oneline
+```
+
+---
 
 
 

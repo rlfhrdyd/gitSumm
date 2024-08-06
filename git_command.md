@@ -13,6 +13,18 @@ git config --global init.defaultBranch main
 
 ---
 
+`로컬에 파일 만들고 git에 연결하는 방법`
+```bash
+git remote add origin https://github.com/rlfhrdyd/gitSumm.git
+
+git add .
+git commit -m "how to change branch main"
+git push origin main
+```
+
+---
+
+
 
 
 

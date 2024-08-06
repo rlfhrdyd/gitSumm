@@ -14,3 +14,31 @@
 - 이는 보통 두 개 이상의 브랜치에서 같은 파일의 같은 부분을 동시에 수정하고 병합하려 할 때 일어난다.
 - Git는 어떤 변경 사항을 우선적으로 적용해야 할지 결정할 수 없기 때문에, 사용자에게 어떤 변경 사항을 적용할지 결정해야 하는 충돌 상황을 알린 후 충돌이 발생한 파일에 특별한 마커를 추가한다.
 - 이 마커는 충돌이 발생한 위치와 각 브랜치에서의 변경 사항을 보여준다.
+
+
+```js
+document.addEventListener("DOMContentLoaded", function() {
+    const input = document.querySelector("#todo-input");
+    const addButton = document.querySelector("#add-button");
+    const todoList = document.querySelector("#todo-list");
+
+    addButton.addEventListener("click", function() {
+        const todoText = input.value.trim();
+        if (todoText !== "") {
+            const listItem = document.createElement("li");
+            listItem.textContent = todoText;
+
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.addEventListener("click", function() {
+                todoList.removeChild(listItem);
+            });
+
+            listItem.appendChild(deleteButton);
+            todoList.appendChild(listItem);
+            input.value = "";
+        }
+    });
+});
+```
+

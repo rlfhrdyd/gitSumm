@@ -15,6 +15,19 @@
 - Git는 어떤 변경 사항을 우선적으로 적용해야 할지 결정할 수 없기 때문에, 사용자에게 어떤 변경 사항을 적용할지 결정해야 하는 충돌 상황을 알린 후 충돌이 발생한 파일에 특별한 마커를 추가한다.
 - 이 마커는 충돌이 발생한 위치와 각 브랜치에서의 변경 사항을 보여준다.
 
+### add some 
+```js
+const ver = navigator.userAgent;
+console.log(ver);
+
+const isIE = /trident/i.test(ver);
+console.log(isIE);
+
+if(isIE){
+  alert("익스플로러 브라우저로 접속하셨네요. 이 웹 페이지는 익스플로러를 지원하지 않습니다. 다른 브라우저로 접속해주세요.")
+}
+```
+---
 
 ```js
 document.addEventListener("DOMContentLoaded", function() {
@@ -41,4 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 ```
+
+
+
+
 
